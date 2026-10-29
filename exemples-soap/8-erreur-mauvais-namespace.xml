@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Namespace different du targetNamespace "http://service/" => operation non reconnue -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://mauvais-namespace/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:somme>
+            <a>12</a>
+            <b>4</b>
+        </ser:somme>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://service/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:soustraction>
+            <a>20</a>
+            <b>7.5</b>
+        </ser:soustraction>
+    </soapenv:Body>
+</soapenv:Envelope>

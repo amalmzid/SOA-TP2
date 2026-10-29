@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Provoque une ArithmeticException cote serveur => reponse SOAP Fault -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://service/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:division>
+            <a>10</a>
+            <b>0</b>
+        </ser:division>
+    </soapenv:Body>
+</soapenv:Envelope>

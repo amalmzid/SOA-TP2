@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "abc" n'est pas un xs:double valide, mais JAX-WS ne valide pas le XSD par defaut :
+     "abc" est converti en 0.0 et la reponse est 4.0 (pas d'erreur !).
+     Pour rejeter ce message, ajouter @com.sun.xml.ws.developer.SchemaValidation sur la classe Calculatrice. -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://service/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:somme>
+            <a>abc</a>
+            <b>4</b>
+        </ser:somme>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://service/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:multiplication>
+            <a>-3</a>
+            <b>2.5</b>
+        </ser:multiplication>
+    </soapenv:Body>
+</soapenv:Envelope>

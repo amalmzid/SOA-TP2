@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- L'operation "puissance" n'existe pas dans le WSDL => SOAP Fault -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://service/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:puissance>
+            <a>2</a>
+            <b>3</b>
+        </ser:puissance>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Enveloppe SOAP 1.1 : obligatoire pour tout message SOAP -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ser="http://service/">
+    <!-- Header : optionnel (securite, jetons, ...), vide ici -->
+    <soapenv:Header/>
+    <!-- Body : contient l'appel de l'operation -->
+    <soapenv:Body>
+        <!-- Nom de l'operation = @WebMethod, namespace = targetNamespace -->
+        <ser:somme>
+            <!-- Parametres = @WebParam(name="a") et @WebParam(name="b") -->
+            <a>12</a>
+            <b>4</b>
+        </ser:somme>
+    </soapenv:Body>
+</soapenv:Envelope>
