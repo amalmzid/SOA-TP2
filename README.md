@@ -77,6 +77,14 @@ Le terminal confirme la publication :
 
 ![Démarrage du serveur](captures/Capture%20d%27%C3%A9cran%202026-10-29%20214748.png)
 
+Le WSDL généré est accessible sur **http://localhost:8585/calculatrice?wsdl** :
+
+![WSDL du service](captures/Capture%20d%27%C3%A9cran%202026-10-31%20074929.png)
+
+Le WSDL importe le schéma XSD, disponible sur **http://localhost:8585/calculatrice?xsd=1** :
+
+![XSD du service](captures/Capture%20d%27%C3%A9cran%202026-10-31%20074845.png)
+
 ---
 
 ## Activité 5 : Test avec SoapUI
